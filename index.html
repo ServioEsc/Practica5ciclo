@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Curso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <h1>Formulario de Inscripción a Curso</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="info-cursos.php">Informacion de los Cursos</a></li>
+            <li><a href="ver_inscripciones.php">Ver Inscripciones</a></li>
+        </ul>
+    </nav>
+    <div class="login">
+        <form action="procesar_inscripcion.php" method="post">
+            <div class="input-group">
+                <label for="nombre"><i class="fas fa-user"></i></label>
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="email"><i class="fas fa-envelope"></i></label>
+                <input type="email" name="email" placeholder="Email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="telefono"><i class="fas fa-phone"></i></label>
+                <input type="tel" name="telefono" placeholder="Telefono" id="telefono" required>
+            </div>
+            <div class="input-group">
+                <label for="curso"><i class="fas fa-book"></i></label>
+                <select name="curso" id="curso" required>
+                    <option value="Inglés">Inglés</option>
+                    <option value="Matemáticas">Matemáticas</option>
+                    <option value="Historia">Historia</option>
+                    <option value="Informática">Informática</option>
+                </select>
+            </div>
+            <input type="submit" value="Inscribirse">
+        </form>
+    </div>
+</body>
+</html>

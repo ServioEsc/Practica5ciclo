@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: #448daa;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover{
+    background-color: #5cb85c;
+}
+h1 {
+    color: #fff;
+    background-color: #51afb6;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.login {
+    background:url(https://png.pngtree.com/png-clipart/20230813/original/pngtree-graduation-webinar-course-class-vector-picture-image_10550252.png) no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin: 20px;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    flex: 0 0 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.input-group input, .input-group select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background: #5cb85c;
+    color: darkred;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #448daa; 
+}
+
+
+input:hover {
+    background-color: #e0e0e0; 
+    border-color: #999;       
+}
+
+.course-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+.course-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.course-card h2{
+    margin-top: 0;
+    color: #333;
+}
+
+.course-card ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-card li{
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background: #e6ffed;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-container p{
+    color: black;
+    font-size: 1.2em;
+}
+
+.confirmation-container .button{
+    display:inline-block;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.confirmation-container .button:hover {
+    background-color: #e0e0e0; 
+    border-color: #999;   
+}
+
+.course-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.course {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgab(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.course h2{
+    color:maroon;
+    margin-bottom: 10px;
+}
+
+.course p{
+    color:black;
+    line-height: 1.5;
+}
+
+.course .button{
+    display:inline-block;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.course .button:hover {
+    background: #448daa; 
+}
